@@ -1,12 +1,12 @@
 
+import Listitem from "./list";
+
 const Orderedlist  = ()=>
 {
     return(
         <div>
             <ol>
-                <li>apple</li>
-                <li>Banana</li>
-                <li>pine apple</li>
+                <Listitem/>
             </ol>
         </div>
     );
