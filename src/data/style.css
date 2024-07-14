@@ -1,0 +1,64 @@
+/* src/data/style.css */
+
+.box1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  
+}
+
+  .grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 7px;
+    padding: 5px;
+  }
+  
+  .grid > div {
+    border: 2px solid black;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+
+
+
+.box1 img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box1 h2 {
+  margin: 10px 0;
+}
+
+.box1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box1 li {
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.box1 li:last-child {
+  border-bottom: none;
+}
+
+.box1 .heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.box1 .name {
+  font-weight: bold;
+  margin-top: 20px;
+}
