@@ -7,11 +7,14 @@ import { Heading } from './data/heading';
 import { Image } from './data/image';
 import { Name } from './data/name';
 import "./data/style.css"
+import Conditionalrendering, { ConditionRender } from './conditionalrendering/conditionalrender';
+
+const arr = [1,2,3,4,5,6,6,8]
 
 function App() {
   return (
     <>
-     <div className='grid'>
+     {/* <div className='grid'>
      {
       data["recipes"].map((item)=>(
 
@@ -26,7 +29,14 @@ function App() {
        </div>
       ))
      }
-     </div>
+     </div> */}
+     
+     <Conditionalrendering array={arr}/>
+
+<ConditionRender array={arr}/>
+
+
+
     </>
   );
 }

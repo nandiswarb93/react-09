@@ -62,3 +62,27 @@
   font-weight: bold;
   margin-top: 20px;
 }
+
+
+.container1{
+
+  height: 100px;
+  width: 200px;
+  background-color: aqua;
+  color: black;
+  margin: 10px;
+  display: inline-block;
+
+
+}
+
+.container2{
+
+  height: 100px;
+  width: 200px;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  margin: 10px;
+  display: inline-block;
+
+}
