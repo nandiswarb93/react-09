@@ -14,26 +14,15 @@ const arr = [1,2,3,4,5,6,6,8]
 function App() {
   return (
     <>
-     {/* <div className='grid'>
-     {
-      data["recipes"].map((item)=>(
-
-       <div key={item["name"]} className='box1'> 
-         <Heading head={item["name"]}/>
-         <Image path={item["image"]} alter={"imge name"} wid={200} hei={200}   />
-         <Name  head={"Ingredients"}/>
-         <UnorderList array={item["ingredients"]} />
-
-         <Name  head={"Instructions"}/>
-         <UnorderList array={item["instructions"]} />
-       </div>
-      ))
-     }
-     </div> */}
+    
      
      <Conditionalrendering array={arr}/>
 
 <ConditionRender array={arr}/>
+
+
+
+
 
 
 
