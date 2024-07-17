@@ -1,20 +1,19 @@
-
 import "../data/style.css"
 
-const Conditionalrendering = (prop) => {
-  const { array } = prop;
+// const Conditionalrendering = (prop) => {
+//   const { array } = prop;
 
-  return (
-    <>
-      {array.length == 0 ? (
-        <h2>array length is 0</h2>
-      ) : (
-        <h2> array length is {`${array.length}`}</h2>
-      )}
-    </>
-  );
-};
-export default Conditionalrendering;
+//   return (
+//     <>
+//       {array.length === 0 ? (
+//         <h2>array length is 0</h2>
+//       ) : (
+//         <h2> array length is {`${array.length}`}</h2>
+//       )}
+//     </>
+//   );
+// };
+// export default Conditionalrendering;
 
 
 
