@@ -89,7 +89,7 @@ function App() {
                 height={150}
               />
               <Iplcups cups={eachImg.cups} />
-              <Progressbar scale={percentage(eachImg.cups)} />
+              {/* <Progressbar scale={percentage(eachImg.cups)} /> */}
               <Iplplayers players={eachImg.players} />
 
               <Iplrunners runners={eachImg.runners} />
