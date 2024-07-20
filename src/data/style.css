@@ -87,6 +87,12 @@
 
 }
 
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .square-card{
   width : 100px;
   height : 100px;
@@ -105,12 +111,37 @@
 
 }
 
-.square-card3{
-  width : 300px;
-  height : 500px;
-  border : 2px solid black;
+.square-card3 {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  display:inline-block;
+}
 
-  display: inline-block;
-  margin : 10px;
+.square-card3:hover {
+  transform: scale(1.05);
+}
 
+.square-card3 h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.square-card3 img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.square-card3 p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 8px 0;
 }

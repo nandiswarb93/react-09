@@ -18,21 +18,25 @@ import ApiCall from "./apicalling/apicall";
 import Counterapp from "./statecomponent/funccounterapp";
 import DummyApi from "./axiosapicalling/receipesapi";
 import CountryCodes from "./axiosapicalling/countrycodes";
+import DemoCarousel from "../src/statecomponent/carasoul";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
 function App() {
   return (
     <>
-      {/* <Conditionalrendering array={arr} />
+      <ConditionRender array={arr} />
 
-      <ConditionRender array={arr} /> */}
+      <DemoCarousel />
 
-      {/* <Statename /> */}
+      <CounterApp />
 
-      {/* <CounterApp /> */}
+      <Statename />
 
-      {/* <Statebox /> */}
+      <ApiCall />
+
+      {/* 
+      <Statebox /> */}
 
       {/* <ApiCall /> */}
 
@@ -40,9 +44,9 @@ function App() {
 
       {/* <ApiCall /> */}
 
-      <DummyApi />
+      {/* <DummyApi /> */}
 
-      <CountryCodes />
+      {/* <CountryCodes /> */}
     </>
   );
 }

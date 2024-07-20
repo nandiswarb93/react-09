@@ -18,7 +18,8 @@ class Statename extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="counter">
+        <h1>Normal Counter App</h1>
         <h1>{this.state.count} </h1>
 
         <button onClick={() => this.increment(1)}>+</button>

@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
+import { Progressbar } from "../ipl/progressbar";
+
 import { Image } from "../data/image";
+
+const percentage = (input) => {
+  return (input / 5) * 100;
+};
 
 class ApiCall extends Component {
   state = {
@@ -23,14 +29,27 @@ class ApiCall extends Component {
           <h2>please wait .....</h2>
         ) : (
           <>
-            {this.state.product.map((each) => {
-              return (
-                <div className="square-card3">
-                  <h3>{each.title}</h3>
-                  <Image path={each.image} alter="Image" wid={100} hei={100} />
-                </div>
-              );
-            })}
+            <div className="cards-container">
+              {this.state.product.map((each) => {
+                return (
+                  <div className="square-card3" key={each.id}>
+                    <h3>{each.title}</h3>
+                    <Image
+                      path={each.image}
+                      alter="Image"
+                      wid={100}
+                      hei={100}
+                    />
+                    <p>${each.price}</p>
+                    <p>{each.category}</p>
+                    <p>{each.description}</p>
+                    <Progressbar scale={percentage(each.rating.rate)} />
+                    <p>Rating: {each.rating.rate}</p>
+                    <p>Reviews: {each.rating.count}</p>
+                  </div>
+                );
+              })}
+            </div>
           </>
         )}
       </div>
@@ -38,3 +57,6 @@ class ApiCall extends Component {
   }
 }
 export default ApiCall;
+
+
+
