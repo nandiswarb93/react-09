@@ -57,6 +57,3 @@ class ApiCall extends Component {
   }
 }
 export default ApiCall;
-
-
-
