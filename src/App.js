@@ -6,26 +6,18 @@ import data from './data/data';
 import { Heading } from './data/heading';
 import { Image } from './data/image';
 import { Name } from './data/name';
-import "./data/style.css"
-import Conditionalrendering, { ConditionRender } from './conditionalrendering/conditionalrender';
+import "./data/style.css";
+import Conditionalrendering, {
+  ConditionRender,
+} from "./conditionalrendering/conditionalrender";
 
-const arr = [1,2,3,4,5,6,6,8]
+const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
 function App() {
   return (
     <>
-    
-     
-     <Conditionalrendering array={arr}/>
-
-<ConditionRender array={arr}/>
-
-
-
-
-
-
-
+      <Conditionalrendering array={arr} />
+      <ConditionRender array={arr} />
     </>
   );
 }
