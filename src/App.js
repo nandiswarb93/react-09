@@ -1,9 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-
-
-
 import IplData from "./ipl/ipldata";
 import IplImage from "./ipl/iplimage";
 import IplHeading from "./ipl/iplheading";
@@ -39,7 +36,7 @@ const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 const percentage = (input) => {
   return (input / 18) * 100;
 };
-
+IplData.sort((a, b) => b.cups - a.cups);
 function App() {
   return (
     <>
@@ -48,7 +45,7 @@ function App() {
       {/* <DemoCarousel /> */}
 
       {/* <Statename /> */}
-      {/* 
+      {/*
       <ApiCall /> */}
 
       {/* <ApiCall /> */}
@@ -61,7 +58,7 @@ function App() {
 
       {/* <CountryCodes /> */}
 
-      {/*       
+      {/*
       <Statebox />  */}
 
       <div>
@@ -89,7 +86,7 @@ function App() {
                 height={150}
               />
               <Iplcups cups={eachImg.cups} />
-              {/* <Progressbar scale={percentage(eachImg.cups)} /> */}
+              <Progressbar scale={percentage(eachImg.cups)} />
               <Iplplayers players={eachImg.players} />
 
               <Iplrunners runners={eachImg.runners} />
