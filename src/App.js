@@ -19,6 +19,8 @@ import Counterapp from "./statecomponent/funccounterapp";
 import DummyApi from "./axiosapicalling/receipesapi";
 import CountryCodes from "./axiosapicalling/countrycodes";
 
+import PlacementTask from "./placementtask22/placementtask";
+
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
 function App() {
@@ -40,9 +42,11 @@ function App() {
 
       {/* <ApiCall /> */}
 
-      <DummyApi />
+      {/* <DummyApi /> */}
 
-      <CountryCodes />
+      {/* <CountryCodes /> */}
+
+      <PlacementTask />
     </>
   );
 }

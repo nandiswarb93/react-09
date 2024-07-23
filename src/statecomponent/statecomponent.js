@@ -9,7 +9,7 @@ class CounterApp extends Component {
     this.setState({ count: this.state.count + value });
   }
   decrement() {
-    this.setState({ count: this.state.count == 0 ? 0 : this.state.count - 1 });
+    this.setState({ count: this.state.count === 0 ? 0 : this.state.count - 1 });
   }
   reset() {
     this.setState({
