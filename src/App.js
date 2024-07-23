@@ -20,6 +20,8 @@ import DummyApi from "./axiosapicalling/receipesapi";
 import CountryCodes from "./axiosapicalling/countrycodes";
 
 import PlacementTask from "./placementtask22/placementtask";
+import RecipeTable from "./hooks/RecipeTable";
+import Boxes from "./hooks/squarebox";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -46,7 +48,11 @@ function App() {
 
       {/* <CountryCodes /> */}
 
-      <PlacementTask />
+      {/* <PlacementTask /> */}
+
+      <RecipeTable />
+
+      <Boxes />
     </>
   );
 }
