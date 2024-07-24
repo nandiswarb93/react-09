@@ -22,6 +22,8 @@ import CountryCodes from "./axiosapicalling/countrycodes";
 import PlacementTask from "./placementtask22/placementtask";
 import RecipeTable from "./hooks/RecipeTable";
 import Boxes from "./hooks/squarebox";
+import UseeffectRecipe from "./hooks/useEffect/UseEffectReciepe";
+import WhetherApi from "./hooks/useEffect/whetherapi";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -50,9 +52,12 @@ function App() {
 
       {/* <PlacementTask /> */}
 
-      <RecipeTable />
+      {/* <RecipeTable /> */}
 
-      <Boxes />
+      {/* <Boxes /> */}
+
+      <UseeffectRecipe />
+      <WhetherApi />
     </>
   );
 }
