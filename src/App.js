@@ -24,6 +24,8 @@ import RecipeTable from "./hooks/RecipeTable";
 import Boxes from "./hooks/squarebox";
 import UseeffectRecipe from "./hooks/useEffect/UseEffectReciepe";
 import WhetherApi from "./hooks/useEffect/whetherapi";
+import FormValidation from "./hooks/useEffect/useEffect2/forms";
+import RegistrationForm from "./hooks/useEffect/useEffect2/registrationform";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -56,8 +58,12 @@ function App() {
 
       {/* <Boxes /> */}
 
-      <UseeffectRecipe />
-      <WhetherApi />
+      {/* <UseeffectRecipe /> */}
+
+      {/* <WhetherApi /> */}
+
+      <FormValidation />
+      <RegistrationForm />
     </>
   );
 }
