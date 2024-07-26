@@ -26,6 +26,7 @@ import UseeffectRecipe from "./hooks/useEffect/UseEffectReciepe";
 import WhetherApi from "./hooks/useEffect/whetherapi";
 import FormValidation from "./hooks/useEffect/useEffect2/forms";
 import RegistrationForm from "./hooks/useEffect/useEffect2/registrationform";
+import UncontrolledForm from "./hooks/useEffect/useEffect2/apitest";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -63,7 +64,10 @@ function App() {
       {/* <WhetherApi /> */}
 
       <FormValidation />
+
       <RegistrationForm />
+
+      <UncontrolledForm />
     </>
   );
 }
