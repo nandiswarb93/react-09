@@ -13,6 +13,9 @@ const FormValidation = () => {
 
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState([]);
+  // const[form,setForm]=useState({
+  //   nam
+  // })
 
   useEffect(() => {
     const storedData = localStorage.getItem("formdata");

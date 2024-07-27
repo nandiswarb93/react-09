@@ -27,6 +27,8 @@ import WhetherApi from "./hooks/useEffect/whetherapi";
 import FormValidation from "./hooks/useEffect/useEffect2/forms";
 import RegistrationForm from "./hooks/useEffect/useEffect2/registrationform";
 import UncontrolledForm from "./hooks/useEffect/useEffect2/apitest";
+import ControlForm from "./hooks/useEffect/controlledforms/controlForm";
+import RegistrationFormWithValidation from "./hooks/useEffect/controlledforms/registrationform";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -36,38 +38,25 @@ function App() {
       {/* <Conditionalrendering array={arr} />
 
       <ConditionRender array={arr} /> */}
-
       {/* <Statename /> */}
-
       {/* <CounterApp /> */}
-
       {/* <Statebox /> */}
-
       {/* <ApiCall /> */}
-
       {/* <Counterapp /> */}
-
       {/* <ApiCall /> */}
-
       {/* <DummyApi /> */}
-
       {/* <CountryCodes /> */}
-
       {/* <PlacementTask /> */}
-
       {/* <RecipeTable /> */}
-
       {/* <Boxes /> */}
-
       {/* <UseeffectRecipe /> */}
-
       {/* <WhetherApi /> */}
+      {/* <FormValidation /> */}
+      {/* <RegistrationForm /> */}
+      {/* <UncontrolledForm /> */}
+      {/* <ControlForm /> */}
 
-      <FormValidation />
-
-      <RegistrationForm />
-
-      <UncontrolledForm />
+      <RegistrationFormWithValidation />
     </>
   );
 }
