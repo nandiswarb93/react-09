@@ -7,9 +7,7 @@ import { Heading } from "./data/heading";
 import { Image } from "./data/image";
 import { Name } from "./data/name";
 import "./data/style.css";
-import Conditionalrendering, {
-  ConditionRender,
-} from "./conditionalrendering/conditionalrender";
+import { ConditionRender } from "./conditionalrendering/conditionalrender";
 import Statename from "./statecomponent/statename";
 import Statebox from "./statecomponent/statecomponentbox";
 import CounterApp from "./statecomponent/statecomponent";
@@ -29,15 +27,14 @@ import RegistrationForm from "./hooks/useEffect/useEffect2/registrationform";
 import UncontrolledForm from "./hooks/useEffect/useEffect2/apitest";
 import ControlForm from "./hooks/useEffect/controlledforms/controlForm";
 import RegistrationFormWithValidation from "./hooks/useEffect/controlledforms/registrationform";
+import DifferentInput from "./hooks/useEffect/controlledforms/differentInputs";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
 function App() {
   return (
     <>
-      {/* <Conditionalrendering array={arr} />
-
-      <ConditionRender array={arr} /> */}
+      {/* <ConditionRender array={arr} /> */}
       {/* <Statename /> */}
       {/* <CounterApp /> */}
       {/* <Statebox /> */}
@@ -57,6 +54,8 @@ function App() {
       {/* <ControlForm /> */}
 
       <RegistrationFormWithValidation />
+
+      <DifferentInput />
     </>
   );
 }

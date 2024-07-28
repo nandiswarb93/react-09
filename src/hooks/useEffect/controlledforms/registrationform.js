@@ -31,7 +31,7 @@ const RegistrationFormWithValidation = () => {
     const userNameEntered = event.target.value;
     console.log(userNameEntered);
     setUsername(userNameEntered);
-    if (userNameEntered.length > 1 && userNameEntered.length < 20) {
+    if (userNameEntered.length > 8 && userNameEntered.length < 15) {
       setUsererror(true);
     } else {
       setUsererror(false);
@@ -54,7 +54,8 @@ const RegistrationFormWithValidation = () => {
 
     // const a = input.length > 8 && input.length < 15;
     // const b = regex.test(input);
-    return input.length < 15;
+
+    return input.length > 8 && input.length < 15;
   };
   return (
     <>
