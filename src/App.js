@@ -51,12 +51,12 @@ function App() {
       {/* <Boxes /> */}
       {/* <UseeffectRecipe /> */}
       {/* <WhetherApi /> */}
-      {/* <FormValidation /> */}
+      <FormValidation />
       <RegistrationForm />
       <UncontrolledForm />
       {/* <ControlForm /> */}
 
-      <RegistrationFormWithValidation />
+      {/* <RegistrationFormWithValidation /> */}
     </>
   );
 }
