@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import findingWhether from "./whetherfunction";
 
 const WhetherApi = () => {
-  const [season, setSeason] = useState("summer");
+  const [season, setSeason] = useState("winter");
   const [greet, setGreet] = useState("");
 
   useEffect(() => {
