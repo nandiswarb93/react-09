@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./home";
 import AboutScreen from "./about";
 import SettingScreen from "./settings";
-import MenuScreen from "./settings";
+import MenuScreen from "./menu";
 
 const NavigationStack = () => {
   return (
