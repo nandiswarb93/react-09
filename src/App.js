@@ -52,8 +52,8 @@ function App() {
       {/* <UseeffectRecipe /> */}
       {/* <WhetherApi /> */}
       {/* <FormValidation /> */}
-      {/* <RegistrationForm /> */}
-      {/* <UncontrolledForm /> */}
+      <RegistrationForm />
+      <UncontrolledForm />
       {/* <ControlForm /> */}
 
       <RegistrationFormWithValidation />
