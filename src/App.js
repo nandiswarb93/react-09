@@ -42,7 +42,7 @@ function App() {
     <>
       {/* <ConditionRender array={arr} /> */}
 
-      {/* <DemoCarousel /> */}
+      <DemoCarousel />
 
       {/* <Statename /> */}
       {/*
