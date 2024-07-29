@@ -1,35 +1,45 @@
-controlled components :
+Navigations : 
 
-form control will done one by react it self
+React is a librsry which creates UI
+data Fetching , navigation
 
-field validation were possible
+react router Dom : using react-router-dom we will enable navigation in the react application
 
-input states wiil be only handled react
-
-
-steps for controlled components:
-
-1. Take the form(jsx)
-2. Take the states for the inputs using useState, 1.1 single and multi state 1.2 multi states
-3. Attach state values attribute to the input and aslo attach the all change handlers for the each input(field validation)
-4. To collect the values form handlers, we will use events.target.value
-5. for field validations we can do in the handlers
+npm i react-router-dom
 
 
-Topics:
+navigations are two ways:
 
-1. Controlled Components
-2. Field Validations
-3. Login Api call
-4. Error Handling
-5. Multiple cases for handling user exist, Invalid credentials
+1. Static navigation
+2. Dynamic Navigation
 
-Tasks:
-1. Repeat the class
-2. Try with different inputs
-3. Registration Forms with field validation
-4. Login data  show in the table also give the delete button
-5. Difference between uncontrolled and controlled 
-6. what is authentication and authorisation , difference between them
+1. Home Screen
+2. About Screen
+3. Setting Screen
+4. Blog Screen
+
+we need to take help of browser route
+
+
+<BrowserRouter>
+<Routes>
+<Routes path="/"  element = {}> </Routes>
+
+<Routes path="/"  element = {}> </Routes>
+
+<Routes path="/"  element = {}> </Routes>
+
+<Routes path="/"  element = {}> </Routes>
+</Routes>
+</BrowserRouter>
+
+https: //www.zomato.com -> base URL
+
+/hyderabad -> Dynamic URL
+
+/mindspace-social-health/info - > 
+Dynamic url
+
+info - > Dynamic url
 
 
