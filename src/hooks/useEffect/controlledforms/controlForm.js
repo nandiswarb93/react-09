@@ -59,7 +59,7 @@ const ControlForm = () => {
             value={username}
             onChange={EmailAdderss}
           />
-          {usererror && (
+          {!usererror && (
             <span style={{ color: "red" }}>
               Invalid username please enter less than 15 characters
             </span>
@@ -75,7 +75,7 @@ const ControlForm = () => {
             value={password}
             onChange={PassWord}
           />
-          {passworderror && (
+          {!passworderror && (
             <span style={{ color: "red" }}>
               Invalid username please enter less than 15 characters
             </span>
