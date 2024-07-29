@@ -61,8 +61,7 @@ function App() {
 
       {/* <CountryCodes /> */}
 
-      {/*       
-      <Statebox />  */}
+      <Statebox />
 
       <div>
         <div className="navbar">
