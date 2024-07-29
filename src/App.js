@@ -28,34 +28,43 @@ import UncontrolledForm from "./hooks/useEffect/useEffect2/apitest";
 import ControlForm from "./hooks/useEffect/controlledforms/controlForm";
 import RegistrationFormWithValidation from "./hooks/useEffect/controlledforms/registrationform";
 import DifferentInput from "./hooks/useEffect/controlledforms/differentInputs";
+import NavigationStack from "./navigation/navigation";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
+
+// function App() {
+//   return (
+//     <>
+//       {/* <ConditionRender array={arr} /> */}
+//       {/* <Statename /> */}
+//       {/* <CounterApp /> */}
+//       {/* <Statebox /> */}
+//       {/* <ApiCall /> */}
+//       {/* <Counterapp /> */}
+//       {/* <ApiCall /> */}
+//       {/* <DummyApi /> */}
+//       {/* <CountryCodes /> */}
+//       {/* <PlacementTask /> */}
+//       {/* <RecipeTable /> */}
+//       {/* <Boxes /> */}
+//       {/* <UseeffectRecipe /> */}
+//       {/* <WhetherApi /> */}
+//       {/* <FormValidation /> */}
+//       {/* <RegistrationForm /> */}
+//       {/* <UncontrolledForm /> */}
+//       {/* <ControlForm /> */}
+
+//       <RegistrationFormWithValidation />
+
+//       <DifferentInput />
+//     </>
+//   );
+// }
 
 function App() {
   return (
     <>
-      {/* <ConditionRender array={arr} /> */}
-      {/* <Statename /> */}
-      {/* <CounterApp /> */}
-      {/* <Statebox /> */}
-      {/* <ApiCall /> */}
-      {/* <Counterapp /> */}
-      {/* <ApiCall /> */}
-      {/* <DummyApi /> */}
-      {/* <CountryCodes /> */}
-      {/* <PlacementTask /> */}
-      {/* <RecipeTable /> */}
-      {/* <Boxes /> */}
-      {/* <UseeffectRecipe /> */}
-      {/* <WhetherApi /> */}
-      {/* <FormValidation /> */}
-      {/* <RegistrationForm /> */}
-      {/* <UncontrolledForm /> */}
-      {/* <ControlForm /> */}
-
-      <RegistrationFormWithValidation />
-
-      <DifferentInput />
+      <NavigationStack />
     </>
   );
 }
