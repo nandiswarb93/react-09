@@ -23,13 +23,17 @@ we need to take help of browser route
 
 <BrowserRouter>
 <Routes>
-<Routes path="/"  element = {}> </Routes>
+<Route path="/"  element = {}> </Route>
 
-<Routes path="/"  element = {}> </Routes>
+<Route path="/"  element = {}> </Route>
 
-<Routes path="/"  element = {}> </Routes>
+<Route path="/"  element = {}> </Route>
 
-<Routes path="/"  element = {}> </Routes>
+<Route path="/"  element = {}> </Route>
+
+<Route path="user/>userId" element={< UserScreen />}> </Route>
+
+
 </Routes>
 </BrowserRouter>
 
@@ -41,5 +45,22 @@ https: //www.zomato.com -> base URL
 Dynamic url
 
 info - > Dynamic url
+
+
+
+30/7/2024:
+
+
+useParams : 
+useParams is hooks react router dom which extracts the dynamic url parameter
+
+there are two ways to redirect the page url :
+
+
+<Link /> component
+useNavigate hook (program redirection)
+
+outlet it is a component provided by the react router dom it tells way to render the child components inside the child components
+
 
 
