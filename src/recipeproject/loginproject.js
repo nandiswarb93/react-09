@@ -5,6 +5,7 @@ const LoginProject = () => {
   return (
     <>
       <NavbarProject />
+
       <ControlForm />
     </>
   );
