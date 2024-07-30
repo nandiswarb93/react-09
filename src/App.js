@@ -30,6 +30,7 @@ import RegistrationFormWithValidation from "./hooks/useEffect/controlledforms/re
 import DifferentInput from "./hooks/useEffect/controlledforms/differentInputs";
 import NavigationStack from "./navigation/navigation";
 
+
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
 // function App() {
