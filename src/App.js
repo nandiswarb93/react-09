@@ -64,8 +64,8 @@ const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 function App() {
   return (
     <>
-      <NavigationStack />
-      <PlacementTask />
+      {/* <NavigationStack />
+      <PlacementTask /> */}
     </>
   );
 }
