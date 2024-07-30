@@ -46,7 +46,7 @@ const ControlForm = () => {
 
   return (
     <>
-      <h2>Registration form with validation</h2>
+      <h2>Login form with validation</h2>
       <form onSubmit={submitHandler}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>

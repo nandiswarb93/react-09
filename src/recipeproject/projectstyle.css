@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 7px;
+    padding: 5px;
+  }
+  
+  .grid > div {
+    border: 2px solid black;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  

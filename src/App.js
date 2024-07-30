@@ -29,6 +29,7 @@ import ControlForm from "./hooks/useEffect/controlledforms/controlForm";
 import RegistrationFormWithValidation from "./hooks/useEffect/controlledforms/registrationform";
 import DifferentInput from "./hooks/useEffect/controlledforms/differentInputs";
 import NavigationStack from "./navigation/navigation";
+import NavigationPoject from "./recipeproject/navigationproject";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -64,8 +65,10 @@ const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 function App() {
   return (
     <>
-      <NavigationStack />
-      <PlacementTask />
+      {/* <NavigationStack /> */}
+      {/* <PlacementTask /> */}
+
+      <NavigationPoject />
     </>
   );
 }
