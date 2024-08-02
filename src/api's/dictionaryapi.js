@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import { Container, Form, Button, Card, ListGroup } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const DictionaryApi = () => {
   const [word, setWord] = useState("");
@@ -32,39 +34,49 @@ const DictionaryApi = () => {
   };
 
   return (
-    <>
-      <div
-        style={{ border: "2px solid black", height: "300px", width: "100%" }}
-      >
-        <h3>Dictionary App</h3>
-        <form onSubmit={submitHandler}>
-          <label htmlFor="text">Enter words to search</label>
-          <input
+    <Container className="mt-4">
+      <h3 className="text-center mb-4">Dictionary App</h3>
+      <Form onSubmit={submitHandler} className="mb-4">
+        <Form.Group controlId="text">
+          <Form.Label>Enter word to search</Form.Label>
+          <Form.Control
             type="text"
-            id="text"
             placeholder="Enter word to search in dictionary"
             value={word}
             onChange={searchingWord}
           />
-          <button type="submit">Search</button>
-        </form>
-        {dict.length > 0 && (
-          <div>
-            <h4>Results:</h4>
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Search
+        </Button>
+      </Form>
+      {dict.length > 0 && (
+        <Card>
+          <Card.Body>
+            <Card.Title>Results:</Card.Title>
             {dict.map((entry, index) => (
-              <div key={index}>
-                <h5>{entry.word}</h5>
-                {entry.meanings.map((meaning, i) => (
-                  <div key={i}>
-                    <p>Part of Speech: {meaning.partOfSpeech}</p>
-                  </div>
-                ))}
-              </div>
+              <ListGroup key={index} variant="flush">
+                <ListGroup.Item>
+                  <h5>{entry.word}</h5>
+                  {entry.meanings.map((meaning, i) => (
+                    <div key={i}>
+                      <p>
+                        <strong>Part of Speech:</strong> {meaning.partOfSpeech}
+                      </p>
+                      {meaning.definitions.map((definition, j) => (
+                        <p key={j}>
+                          <strong>Definition:</strong> {definition.definition}
+                        </p>
+                      ))}
+                    </div>
+                  ))}
+                </ListGroup.Item>
+              </ListGroup>
             ))}
-          </div>
-        )}
-      </div>
-    </>
+          </Card.Body>
+        </Card>
+      )}
+    </Container>
   );
 };
 
