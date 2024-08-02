@@ -40,6 +40,12 @@ const percentage = (input) => {
   return (input / 18) * 100;
 };
 
+const increment = (input) => {
+  return (input / 18) * 100 + 1;
+};
+const decrement = (input) => {
+  return (input / 18) * 100 - 1;
+};
 function App() {
   return (
     <>
@@ -89,6 +95,9 @@ function App() {
               />
               <Iplcups cups={eachImg.cups} />
               <Progressbar scale={percentage(eachImg.cups)} />
+
+              <button onClick={increment(eachImg.cups)}>+</button>
+              <button onClick={decrement(eachImg.cups)}>-</button>
               <Iplplayers players={eachImg.players} />
 
               <Iplrunners runners={eachImg.runners} />
