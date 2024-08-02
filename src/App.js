@@ -18,6 +18,7 @@ import ApiCall from "./apicalling/apicall";
 import Counterapp from "./statecomponent/funccounterapp";
 import DummyApi from "./axiosapicalling/receipesapi";
 import CountryCodes from "./axiosapicalling/countrycodes";
+import JsonTypeApi from "./apicalling/jsontypecode";
 
 const arr = [1, 2, 3, 4, 5, 6, 6, 8];
 
@@ -34,15 +35,15 @@ function App() {
 
       {/* <Statebox /> */}
 
-      {/* <ApiCall /> */}
-
       {/* <Counterapp /> */}
 
-      {/* <ApiCall /> */}
+      <ApiCall />
 
-      <DummyApi />
+      <JsonTypeApi />
 
-      <CountryCodes />
+      {/* <DummyApi /> */}
+
+      {/* <CountryCodes /> */}
     </>
   );
 }

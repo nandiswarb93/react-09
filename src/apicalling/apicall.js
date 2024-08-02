@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
 import { Image } from "../data/image";
+import "./ApiCall.css";
 
 class ApiCall extends Component {
   state = {
@@ -8,6 +8,7 @@ class ApiCall extends Component {
     loader: true,
     error: false,
   };
+
   fetchproducts = () => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
@@ -16,25 +17,29 @@ class ApiCall extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.fetchproducts}>fetch the data</button>
+      <div className="api-container">
+        <button className="api-button" onClick={this.fetchproducts}>
+          Fetch the data
+        </button>
 
         {this.state.loader ? (
-          <h2>please wait .....</h2>
+          <h2 className="api-loader">Please wait .....</h2>
         ) : (
-          <>
-            {this.state.product.map((each) => {
-              return (
-                <div className="square-card3">
-                  <h3>{each.title}</h3>
-                  <Image path={each.image} alter="Image" wid={100} hei={100} />
-                </div>
-              );
-            })}
-          </>
+          <div className="api-grid">
+            {this.state.product.map((each) => (
+              <div className="api-product" key={each.id}>
+                <h3>{each.title}</h3>
+                <Image path={each.image} alter="Image" wid={100} hei={100} />
+                <h4>Price: ${each.price}</h4>
+                <h4>Category: {each.category}</h4>
+                <h4>Description: {each.description}</h4>
+              </div>
+            ))}
+          </div>
         )}
       </div>
     );
   }
 }
+
 export default ApiCall;
