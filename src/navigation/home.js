@@ -1,13 +1,15 @@
+import CountryApi from "../particularobjectapi/countryapi";
+import RandomJoke from "../randomjoke/randomjoke";
 import NavBar from "./navbar";
 
 const HomeScreen = () => {
   return (
     <>
       <NavBar />
-      <h3>
-        Welcome to home screen
-        <h1>hiiii this is Home screen</h1>
-      </h3>
+      {/* <h4>This home Screen</h4> */}
+      <RandomJoke />
+
+      {/* <CountryApi /> */}
     </>
   );
 };
