@@ -1,5 +1,6 @@
 import CountryApi from "../particularobjectapi/countryapi";
 import RandomJoke from "../randomjoke/randomjoke";
+import DropDownRecipe from "../recipeProject/dropdown";
 import NavBar from "./navbar";
 
 const HomeScreen = () => {
@@ -10,7 +11,9 @@ const HomeScreen = () => {
       <RandomJoke />
 
       {/* <CountryApi /> */}
+      <DropDownRecipe />
     </>
   );
 };
 export default HomeScreen;
+
